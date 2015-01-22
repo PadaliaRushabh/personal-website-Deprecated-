@@ -1,0 +1,30 @@
+
+#me{
+    min-height:100vh;
+    background-image:url("../images/intro/1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+#me .intro{
+    position: relative; /*For Top to work*/
+    top: 50%;/*Leave 50% from top*/
+    -webkit-transform: translateY(-50%);/*Same as above just HTML5 Syntax*/
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#me .my-image{
+    width:300px;
+    height:300px;
+    margin:0 auto; 
+	 border: 10px solid rgb(157, 130, 130);
+	 border-radius: 25px;
+}
+
+#me .my-info{
+    max-width:650px;
+    margin:0 auto;
+    text-align:center;
+}
