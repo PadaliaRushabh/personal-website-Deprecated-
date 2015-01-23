@@ -28,3 +28,10 @@
     margin:0 auto;
     text-align:center;
 }
+
+/*NavBar*/
+
+.navbar {
+	margin-bottom: 0;
+	border: none;
+}
