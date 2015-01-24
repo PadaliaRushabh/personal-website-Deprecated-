@@ -1,4 +1,14 @@
 
+/*Fonts*/
+@font-face {
+    font-family: axis;
+    src: url(../fonts/axis.otf);
+}
+
+@font-face {
+    font-family: zombiecat;
+    src: url(../fonts/zombieCat.ttf);
+}
 
 .center {
 	text-align: center;
@@ -15,7 +25,7 @@
 
 #me{
     min-height:100vh;
-    background-image:url("../images/intro/1.jpg");
+    background-image:url("../images/intro/4.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,14 +43,41 @@
     width:300px;
     height:300px;
     margin:0 auto; 
-	 border: 10px solid rgb(157, 130, 130);
+	 border: 6px solid rgb(33, 27, 37);
 	 border-radius: 25px;
 }
 
 #me .my-info{
     max-width:650px;
-    margin:0 auto;
-    text-align:center;
+    margin:30px auto 0 auto; 
+    text-align:center;  
+   
+}
+
+#me .my-info h4{
+	 font-family: axis;
+	 font-size: 16px;
+    line-height: 24px;
+	 color: rgb(155, 135, 213);
+}
+
+.creativezombies{
+	margin-top: 20px;
+}
+
+.creativezombies h4 a{
+	color: rgb(213, 135, 135);
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.creativezombies h4 a:hover{
+	color: rgb(255, 255, 255);
+}
+
+.overlay{
+	background-color: rgba(0, 23, 19, 0.53);
+	min-height:100vh;
 }
 
 /*NavBar*/
@@ -48,6 +85,32 @@
 .navbar {
 	margin-bottom: 0;
 	border: none;
+}
+.navbar-default{
+	background-color: #14141D;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #D07E7E;
+	background-color: transparent; 
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
+	font-size: 20px;
+	font-family: zombiecat;
+	margin-right: 10px;
+}
+
+.navbar-nav>li:nth-child(3){
+   font-size: 30px;
+	font-family: axis;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.navbar-nav>li:nth-child(3) a{
+   font-size: 30px;
+	font-family: axis;
 }
 
 .navbar .navbar-nav {
@@ -58,6 +121,10 @@
 
 .navbar .navbar-collapse {
   text-align: center;
+}
+
+nav{
+	opacity: 0.75;
 }
 
 /*Project*/
