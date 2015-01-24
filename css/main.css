@@ -84,3 +84,47 @@
 .projects-view a{
 	text-decoration: none;
 }
+
+/*contact*/
+
+.contact-box{
+	max-width: 600px;
+	margin:0 auto;
+}
+
+.contact-box form{
+	text-align: center;
+}
+
+/*resume*/
+
+#resume button{
+	display: inline-block;
+  	margin: 0 10px 10px 0;
+  	padding: 15px 45px;
+  	font-size: 30px;
+  	font-family: "Bitter",serif;
+  	line-height: 1.8;
+  	appearance: none;
+  	box-shadow: none;
+  	border-radius: 0;
+}
+#resume button:focus {
+  outline: none
+}
+.flat {
+  color: #fff;
+  background-color: #6496c8;
+  text-shadow: -1px 1px #417cb8;
+  border: none;
+}
+.flat button:hover,
+.flat button.hover {
+  background-color: #346392;
+  text-shadow: -1px 1px #27496d;
+}
+.flat button:active,
+.flat button.active {
+  background-color: #27496d;
+  text-shadow: -1px 1px #193047;
+}
