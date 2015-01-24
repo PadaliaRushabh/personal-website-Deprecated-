@@ -1,4 +1,18 @@
 
+
+.center {
+	text-align: center;
+	padding-bottom: 55px;
+}
+
+.lead {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: BikoRegular;
+	color: #C24B4B;
+}
+
 #me{
     min-height:100vh;
     background-image:url("../images/intro/1.jpg");
@@ -35,3 +49,28 @@
 	margin-bottom: 0;
 	border: none;
 }
+
+/*Project*/
+#projects{
+	margin-top: 50px;
+}
+
+.projects-body{
+	overflow: hidden;
+}
+
+.box{
+	padding: 40px 30px;
+	background: #ECD9F5;
+	border-radius:5px;
+	margin: 0 0 40px;
+}
+
+.img-projects-type {
+	width: 81px;
+	height: 81px;
+}
+
+/*.img-projects {
+	min-width: 300px;
+}*/
