@@ -74,3 +74,13 @@
 /*.img-projects {
 	min-width: 300px;
 }*/
+
+.projects-view{
+	font-size: 28px;
+	text-align: right;
+	
+}
+
+.projects-view a{
+	text-decoration: none;
+}
