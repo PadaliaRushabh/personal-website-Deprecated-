@@ -91,7 +91,7 @@ h2{
 }
 
 #me .my-info{
-    max-width:650px;
+    max-width:800px;
     margin:30px auto 0 auto; 
     text-align:center;  
    
@@ -260,8 +260,12 @@ nav{
 }
 
 #contact .overlay{
-	min-height:0;
+	min-height: 0;
 	background-color: rgba(0, 23, 19, 0.79);
+}
+
+#contact .lead{
+	color:#784BFF;
 }
 
 #contact .form-control{
@@ -275,10 +279,21 @@ nav{
 
 #contact .btn{
 	color: #FFF;
-	background-color: #AD82BB;
-	border-color: #AD82BB;
+	background-color: #493151;
+	border-color: #493151;
 	font-family: zombiecat;
 
+}
+#contact .form-control{
+	background-color:#EDE9E9;
+}
+#contact textarea{
+	min-height: 150px;
+ 	resize: none;
+}
+
+#contact input{
+	min-height: 50px;
 }
 
 /*.contact{
@@ -298,6 +313,7 @@ nav{
 }*/
 
 /*resume*/
+
 
 #resume button{
 	display: inline-block;

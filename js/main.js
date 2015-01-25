@@ -16,9 +16,13 @@ $(document).ready(function() {
 		}
   	});*/
   	
-  	
-
-	$(".navbar-nav>li>a").click(function (e) {	
+  	$('#resume-html-display').load("resume.html");
+	
+	var sections = $('section')
+  		, nav = $('nav')
+  		, nav_height = nav.outerHeight();
+  
+	/*$(".navbar-nav>li>a").click(function (e) {	
 		var menu = $(this).parent().parent();
 		menu.find("li").each(function(index) {
 		if(index !=2 ){			
@@ -32,24 +36,18 @@ $(document).ready(function() {
 		if($(this).html().trim() !== "Rushabh Padalia"){
 			$(this).parent().addClass("active");
 		}
-	});
-	
-	$("#nav-resume").click(function(e) {
-		e.preventDefault(); 
-    	$('html, body').animate({
-        scrollTop: $("#resume").offset().top
-    	}, 1000);
-	});
+	});*/
+
 	$("#nav-projects").click(function(e) {
 		e.preventDefault(); 
     	$('html, body').animate({
-        scrollTop: $("#projects").offset().top
+        scrollTop: $("#projects").offset().top - nav_height  + 10
     	}, 1000);
 	});
 	$("#nav-me").click(function(e) {
 		e.preventDefault(); 
     $('html, body').animate({
-        scrollTop: $("#me").offset().top
+        scrollTop: $("#me").offset().top - nav_height
     }, 1000);
 	});
 	$("#nav-rushabh").click(function(e) {
@@ -58,13 +56,37 @@ $(document).ready(function() {
 	$("#nav-contact").click(function(e) {
 		e.preventDefault(); 
     $('html, body').animate({
-        scrollTop: $("#contact").offset().top
+        scrollTop: $("#contact").offset().top - nav_height + 10
     }, 1000);
 	});
 	$("#nav-resume").click(function(e) {
 		e.preventDefault(); 
     $('html, body').animate({
-        scrollTop: $("#resume").offset().top
+        scrollTop: $("#resume").offset().top - nav_height + 10
     }, 1000);
 	});	
+	
+	/*Change active on scroll*/
+  
+	$(window).on('scroll', function () {
+  		var cur_pos = $(this).scrollTop();
+ 
+  		sections.each(function() {
+    		var top = $(this).offset().top - nav_height,
+        	bottom = top + $(this).outerHeight();
+ 			console.log("offset top " +  $(this).offset().top);
+ 			console.log("cur " +  cur_pos);
+ 			//console.log("top " +  top);
+ 			//console.log("bottom " +  bottom);
+    		if (cur_pos >= top && cur_pos <= bottom) {
+      		nav.find('a').parent().removeClass('active');
+
+      		nav.find('a[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
+      		
+    		}
+  		});
+});	
+	
+	
+	
 });
