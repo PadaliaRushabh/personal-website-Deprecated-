@@ -29,11 +29,11 @@
     					</div>		
     				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       				<ul class="nav navbar-nav">
-        					<li class="active"><a href="#"> Me <span class="sr-only">(current)</span></a></li>
-        					<li><a href="#"> Projects </a></li>
-        					<li><a  href="#"> Rushabh Padalia </a></li>
-							<li><a href="#"> Contact </a></li>
-							<li><a href="#"> Résumé </a></li>
+        					<li class="active"><a id="nav-me" href="#"> Me <span class="sr-only">(current)</span></a></li>
+        					<li><a id="nav-projects" href="#"> Projects </a></li>
+        					<li><a id="nav-rushabh" href="#"> Rushabh Padalia </a></li>
+							<li><a id="nav-contact" href="#"> Contact </a></li>
+							<li><a id="nav-resume" href="#"> Résumé </a></li>
       				</ul>
     				</div>
   			</div>
@@ -69,7 +69,6 @@
 				<h2>Projects</h2>    	
 				<p class="lead">Lorem ipsum dolor sit ame consectetur adipisicing elit</p>	
 				<a class="github-button" href="https://github.com/padaliarushabh" data-style="mega">Follow @padaliarushabh</a>
-				<p class="lead">View all</p>	
     		</div>
 			<div class="row">
 				<div class="col-sm-6 col-md-4">
@@ -78,14 +77,14 @@
 							<img class="img-responsive img-projects-type" src="images/type/android.png" alt="" />			
 						</div>	
 						<div class="projects-body">
-							<h3 class="projcts-heading">Control Over Web</h3>
-							<p class="projcts-desc">Android application to control sensors and get weather information</p>	
+							<h3 class="projects-heading">Control Over Web</h3>
+							<p class="projects-desc">Android application to control sensors and get weather information </p>	
 						</div>
 						<img class="img-responsive img-projects" src="images/projects/item1.png" alt="" />		
 						<div class="projects-view">
 							<a href="#" target="_blank" class="fa-git"></a>	
 							<a href="#" target="_blank" class="fa-eye"></a>
-						</div>
+						</div>		
 					</div>
 				</div>
 				
@@ -95,8 +94,8 @@
 							<img class="img-responsive img-projects-type" src="images/type/web_development.png" alt="" />			
 						</div>	
 						<div class="projects-body">
-							<h3 class="projcts-heading">Ancee Website</h3>
-							<p class="projcts-desc">Ancee Website for fashion store</p>	
+							<h3 class="projects-heading">Ancee Website</h3>
+							<p class="projects-desc">Ancee Website for fashion store</p>	
 						</div>
 						<img class="img-responsive img-projects" src="images/projects/item2.png" alt="" />	
 						<div class="projects-view">
@@ -111,8 +110,8 @@
 							<img class="img-responsive img-projects-type" src="images/type/android.png" alt="" />			
 						</div>	
 						<div class="projects-body">
-							<h3 class="projcts-heading">Control Over Web</h3>
-							<p class="projcts-desc">Android application to control sensors and get weather information</p>	
+							<h3 class="projects-heading">Control Over Web</h3>
+							<p class="projects-desc">Android application to control sensors and get weather information</p>	
 						</div>
 						<img class="img-responsive img-projects" src="images/projects/item1.png" alt="" />			
 						<div class="projects-view">
@@ -126,8 +125,8 @@
 							<img class="img-responsive img-projects-type" src="images/type/android.png" alt="" />			
 						</div>	
 						<div class="projects-body">
-							<h3 class="projcts-heading">Control Over Web</h3>
-							<p class="projcts-desc">Android application to control sensors and get weather information</p>	
+							<h3 class="projects-heading">Control Over Web</h3>
+							<p class="projects-desc">Android application to control sensors and get weather information</p>	
 						</div>
 						<img class="img-responsive img-projects" src="images/projects/item1.png" alt="" />			
 						<div class="projects-view">
@@ -142,8 +141,8 @@
 							<img class="img-responsive img-projects-type" src="images/type/android.png" alt="" />			
 						</div>	
 						<div class="projects-body">
-							<h3 class="projcts-heading">Control Over Web</h3>
-							<p class="projcts-desc">Android application to control sensors and get weather information</p>	
+							<h3 class="projects-heading">Control Over Web</h3>
+							<p class="projects-desc">Android application to control sensors and get weather information</p>	
 						</div>
 						<img class="img-responsive img-projects" src="images/projects/item1.png" alt="" />	
 						<div class="projects-view">
@@ -157,8 +156,8 @@
 							<img class="img-responsive img-projects-type" src="images/type/android.png" alt="" />			
 						</div>	
 						<div class="projects-body">
-							<h3 class="projcts-heading">Control Over Web</h3>
-							<p class="projcts-desc">Android application to control sensors and get weather information</p>	
+							<h3 class="projects-heading">Control Over Web</h3>
+							<p class="projects-desc">Android application to control sensors and get weather information</p>	
 						</div>
 						<img class="img-responsive img-projects" src="images/projects/item1.png" alt="" />			
 						<div class="projects-view">
@@ -172,6 +171,7 @@
     </section>
     
     <section id="contact">
+    	<div class="overlay">
 		<div class="container">
     		
     		<div class="row">
@@ -206,14 +206,15 @@
                         
                  	<div class="form-group">
                   	<div class="col-sm-12">
-                     	<button type="submit" class="btn btn-default btn-message">Send Message</button>
+                     	<button type="submit" class="btn btn-lg btn-message">Send Message</button>
                      </div>
                   </div>
              	</form>
              	</div>
 				</div>    		
     		</div>			
-		</div>    
+		</div>   
+		</div> 
     </section>
     
     <section id="resume">
@@ -223,8 +224,7 @@
 			<p class="lead">Seeking challenging assignment in Software Development</p>	
     	</div>
 			<div class="row">
-				<div class="col-xs-12 center">
-					
+				<div class="col-xs-12 center">	
 					<button  class="flat">PDF Format</button>
 					<button  id="resume-html-btn" class="flat">HTML Format</button>
 					<button  class="flat">Doc Format</button>
@@ -233,14 +233,13 @@
 		</div>    
     </section>
     
-    <section id="resume-html">
+    <!--<section id="resume-html">
 		 <div class="container">
-		 <div class="row">
-		 	<div id="resume-html-display"></div>
+		 	<div class="row">
+		 		<div id="resume-html-display"></div>
+		 	</div>
 		 </div>
-		 
-		 </div>
-    </section>
+    </section> -->
     
    <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
