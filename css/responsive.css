@@ -6,27 +6,39 @@
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+
  
 }
 
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {
-     /*.navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-    }
+	.navbar-default .navbar-nav>li>a {
+		color: #FFF;
+		font-size: 20px;
+		font-family: zombiecat;
+		margin-right: 5px;
+	}	
 
-    .navbar .navbar-collapse {
-        text-align: center;
-    }*/
+	.navbar-nav>li:nth-child(3){
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.navbar-nav>li:nth-child(3) a{
+   	font-size: 20px;
+		font-family: axis;
+		cursor: default;
+	}
 }
-
 /* xs */
 @media (max-width: 767px) {
- 
+	
+	.box{
+		width: 70%;	
+		margin:0 auto 40px auto;	
+		
+	}
 }
 
 /* XS Portrait */

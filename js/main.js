@@ -80,6 +80,9 @@ $(document).ready(function() {
       		
     		}
   		});
+			if($(window).scrollTop() + $(window).height() == $(document).height()){
+				nav.find('a[href="#resume"]').parent().addClass('active');
+			}
 	});	
 	
 	$('#dad-website-btn').click(function(){

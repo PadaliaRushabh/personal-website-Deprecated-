@@ -148,7 +148,6 @@ h2{
 }
 
 .navbar-nav>li:nth-child(3){
-   font-size: 30px;
 	font-family: axis;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -186,6 +185,7 @@ nav{
 
 .projects-body{
 	overflow: hidden;
+	height: 70px;
 }
 
 .projects-body h3{
@@ -200,13 +200,16 @@ nav{
 .projects-heading{
 	font-family:bikoblack;
 	color: rgb(119, 25, 25);
+	margin-top: 25px;
 }
 
 .projects-desc{
 	font-family: bikoregular;
 	color: rgb(145, 40, 40);
 	font-size: 15px;
-	text-align: justify;
+	text-align: left;
+	height: 50px;
+	margin-top: 20px;
 }
 .empty-view-project{
 	padding-bottom: 28px;
@@ -217,17 +220,25 @@ nav{
 	background: #FFFFFF;
 	border-radius:5px;
 	margin: 0 0 40px;
+
 }
 
-.box img{
+.box img{	
 	margin-bottom: 15px;
+}
 
+.img-projects{
+	min-width: 285px;
+	min-height: 288px;
+	margin-top: 15px;
+ 	border: 3px solid rgb(249, 249, 249);
+ 	border-radius: 25px;
 }
 
 .img-projects-type {
 	width: 81px;
 	height: 81px;
-	margin-top: 10px;
+
 }
 
 /*.img-projects {
@@ -237,6 +248,7 @@ nav{
 .projects-view{
 	font-size: 20px;
 	text-align: right;
+	margin-top: 20px;
 }
 
 .projects-view a{
@@ -333,6 +345,7 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    min-height: 800px;
 }
 #resume button{
 	display: inline-block;
@@ -350,6 +363,8 @@ nav{
 }
 #resume .overlay{
 	background-color: rgba(0, 23, 19, 0.53);
+	min-height: 800px;
+	
 }
 #resume img{
 	 width:350px;
@@ -361,6 +376,9 @@ nav{
 #resume button:focus {
   outline: none
 }
+
+
+
 .flat {
   color: #fff;
   background-color: #6496c8;
