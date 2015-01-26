@@ -46,6 +46,9 @@ body{
 a:hover{
 	text-decoration: none;
 }
+a:link:active, a:visited:active{
+	text-decoration: none;
+}
 
 h2{
 	font-family: axis;
@@ -154,6 +157,11 @@ h2{
 .navbar-nav>li:nth-child(3) a{
    font-size: 30px;
 	font-family: axis;
+	cursor: default;
+}
+
+.navbar-nav>li:nth-child(3) a:hover{
+	color:#FFF;
 }
 
 .navbar .navbar-nav {

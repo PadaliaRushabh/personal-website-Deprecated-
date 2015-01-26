@@ -82,6 +82,13 @@ $(document).ready(function() {
   		});
 	});	
 	
-	
+	$('#dad-website-btn').click(function(){
+   	window.open('http://rajesh.padalia.net');
+   	return false;
+	});
+	$('#resume-html-btn').click(function(){
+   	window.open('http://rushabh.padalia.net/resume');
+   	return false;
+	});
 	
 });
