@@ -314,7 +314,13 @@ nav{
 
 /*resume*/
 
-
+#resume{
+    background-image:url("../images/resume/1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
 #resume button{
 	display: inline-block;
   	margin: 0 10px 10px 0;
@@ -325,6 +331,19 @@ nav{
   	appearance: none;
   	box-shadow: none;
   	border-radius: 0;
+}
+#resume .lead{
+	color:#FFFFFF;
+}
+#resume .overlay{
+	background-color: rgba(0, 23, 19, 0.53);
+}
+#resume img{
+	 width:350px;
+    height:500px;
+    margin:0 auto; 
+	 border: 6px solid rgb(138, 152, 202);
+	 border-radius: 25px;
 }
 #resume button:focus {
   outline: none

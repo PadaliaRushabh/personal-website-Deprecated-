@@ -74,18 +74,13 @@ $(document).ready(function() {
   		sections.each(function() {
     		var top = $(this).offset().top - nav_height,
         	bottom = top + $(this).outerHeight();
- 			console.log("offset top " +  $(this).offset().top);
- 			console.log("cur " +  cur_pos);
- 			//console.log("top " +  top);
- 			//console.log("bottom " +  bottom);
     		if (cur_pos >= top && cur_pos <= bottom) {
-      		nav.find('a').parent().removeClass('active');
-
+      		nav.find('a').parent().removeClass('active');	
       		nav.find('a[href="#'+$(this).attr('id')+'"]').parent().addClass('active');
       		
     		}
   		});
-});	
+	});	
 	
 	
 	
