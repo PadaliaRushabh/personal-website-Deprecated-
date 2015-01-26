@@ -198,6 +198,10 @@ nav{
 	font-family: bikoregular;
 	color: rgb(145, 40, 40);
 	font-size: 15px;
+	text-align: justify;
+}
+.empty-view-project{
+	padding-bottom: 28px;
 }
 
 .box{
@@ -209,6 +213,7 @@ nav{
 
 .box img{
 	margin-bottom: 15px;
+
 }
 
 .img-projects-type {
