@@ -69,6 +69,7 @@ h2{
 	color: #4A2DA0;
 }
 
+
 #me{
     min-height:100vh;
     background-image:url("../images/intro/4.jpg");
@@ -105,6 +106,9 @@ h2{
 	 font-size: 16px;
     line-height: 24px;
 	 color: rgb(155, 135, 213);
+}
+.intro-wrap{
+	height: 90.7vh;
 }
 
 .creativezombies{
@@ -266,7 +270,7 @@ nav{
     background-position: center center;
 }
 #contact h2{
-	color:rgb(98, 22, 124);
+	color:rgb(178, 87, 87);
 }
 
 #contact a{
@@ -290,7 +294,7 @@ nav{
 }
 
 #contact .lead{
-	color:#784BFF;
+	color:#FFFFFF;
 }
 
 #contact .form-control{
@@ -321,6 +325,9 @@ nav{
 	min-height: 50px;
 }
 
+.btn-lg{
+	font-family: zombiecat;
+}
 /*.contact{
 	display: block;
 	width: 50px;
@@ -357,6 +364,10 @@ nav{
   	appearance: none;
   	box-shadow: none;
   	border-radius: 0;
+}
+
+#resume button:nth-child(2){
+	padding: 15px 30px;
 }
 #resume .lead{
 	color:#FFFFFF;

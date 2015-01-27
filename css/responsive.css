@@ -37,13 +37,112 @@
 	.box{
 		width: 70%;	
 		margin:0 auto 40px auto;	
-		
+	}
+	nav{
+		opacity: 1;
+	}
+	.projects-desc{
+		height: 70px;		
+	}	
+	.img-projects{
+		min-width: 0;
+		min-height: 0;
+	}
+	#me .my-image{
+    	width:200px;
+    	height:200px;
+	}
+	#me{
+		min-height: 0;	
+		padding-top: 50px;
+	}
+	#me .intro{
+    	position: static; /*For Top to work*/
+    	top: initial;/*Leave 50% from top*/
+    	-webkit-transform: none;/*Same as above just HTML5 Syntax*/
+    	-ms-transform: none;
+    	transform: none;
+    	margin-top: 30px;
+	}
+	#me .my-image{
+    	width:200px;
+    	height:200px;
+	}
+	.intro-wrap{
+		height: auto;
+	}
+	.overlay{
+		min-height: 0;	
+	}
+	#resume img{
+	 	width:250px;
+    	height:300px;
+	}	
+	
+	#resume button {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	#resume button:nth-child(2){
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	#resume button:nth-child(3){
+		padding-right: 27px;
+		padding-left: 27px;
 	}
 }
 
 /* XS Portrait */
 @media (max-width: 480px) {
-
-
+	.box{
+		width: 100%;		
+	}
+	.projects-desc{
+		height: 70px;		
+	}
+	.img-projects{
+		min-width: 0;
+		min-height: 0;
+	}
+	#me{
+		min-height: 0;	
+		padding-top: 50px;
+	}
+	#me .intro{
+    	position: static; /*For Top to work*/
+    	top: initial;/*Leave 50% from top*/
+    	-webkit-transform: none;/*Same as above just HTML5 Syntax*/
+    	-ms-transform: none;
+    	transform: none;
+    	margin-top: 30px;
+	}
+	#me .my-image{
+    	width:200px;
+    	height:200px;
+	}
+	.intro-wrap{
+		height: auto;
+	}
+	.overlay{
+		min-height: 0;	
+	}
+	#resume img{
+	 	width:250px;
+    	height:300px;
+	}	
+	
+	#resume button {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	#resume button:nth-child(2){
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	#resume button:nth-child(3){
+		padding-right: 27px;
+		padding-left: 27px;
+	}
 }
 
