@@ -381,7 +381,7 @@ nav{
 	 width:350px;
     height:500px;
     margin:0 auto; 
-	 border: 6px solid rgb(138, 152, 202);
+	 border: 3px solid rgb(138, 152, 202);
 	 border-radius: 25px;
 }
 #resume button:focus {
