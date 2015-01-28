@@ -1,6 +1,18 @@
-extends layout
-
-block content
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='Rushabh')
+    title Rushabh Padalia
+    // core CSS
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/font-awesome.min.css', rel='stylesheet')
+    link(href='css/main.css', rel='stylesheet')
+    link(href='css/responsive.css', rel='stylesheet')
+  // /head
+  body
     section#nav
       nav.navbar.navbar-default.navbar-fixed-top
         .container
@@ -170,3 +182,8 @@ block content
               button.flat PDF Format
               button#resume-html-btn.flat HTML Format
               button.flat Doc Format
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/main.js')
+    script#github-bjs(async='', defer='', src='https://buttons.github.io/buttons.js')
+

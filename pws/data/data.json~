@@ -1,0 +1,92 @@
+{
+  "me": {
+    "my-intro": "I am Rushabh Padalia, a student and a freelance programmer. Programming is my passion, I love working with different programming languages - Java, Python, JavaScript, PHP, C#.I am also open-source enthusiast and won't mind playing with Linux whole day.",
+    "creativezombies": [
+        "I am also co-founder of Software Development company",
+        "http://www.creativezombies.com/",
+        "CreativeZombies"
+      ]
+  },
+    "projects": 
+      {
+        "heading": "Projects",
+        "lead": "Some of the recent Projects I have worked on",
+        "projects":[
+          {
+            "heading":"Control Over Web",
+            "desc":"See temperature and get notification on your android device when the fire alarm or intrusion detection sensors gets activated.",
+            "type":"android",
+            "views":[
+              {"git":"https://github.com/PadaliaRushabh/control-over-web"}
+              ]
+          
+          },
+          
+          {
+            "heading":"Ancee Website",
+            "desc":"Ancee Website for fashion store, which includes an administrative backhand, to make updates website easy.",
+            "type":"web",
+            "views":[
+              {"web":"http://www.an-cee.com"}
+              ]
+          
+          },
+          {
+            "heading":"The Royal Taj",
+            "desc":"A website for Royal Taj (Restaurant), The website includes ajax drive menu which fetches data from a json file.",
+            "type":"web",
+            "views":[
+              {"web":"http://www.theroyaltaj.com/index.php"}
+              ]
+          
+          },
+          
+          {
+            "heading":"Guess My Number",
+            "desc":"Android game application will allow children to play an educational game using virtual cards that display collections of numbers.",
+            "type":"android",
+            "views":[
+              {"git":"https://github.com/PadaliaRushabh/Guess-My-Number"}
+              ]
+          
+          },
+          {
+            "heading":"TweetX",
+            "desc":"A data mining project to collect information from twitter and cluster them using K-mean algorithm.",
+            "type":"terminal",
+            "views":[
+              {"web":"https://github.com/PadaliaRushabh/tweetx"}
+              ]
+          
+          },
+          
+          {
+            "heading":"Safety Field Audit",
+            "desc":"Web based application for Engineers to input and manage safety violations by staff during work in yards. Reports generated using SSRS.",
+            "type":"windows",
+            "views":[
+              {"none":""}
+              ]
+          
+          }
+        
+        ]
+      },
+      "contacts":{
+        "heading":"contact",
+        "lead":"Want to say hello? Talk to me? Send me a message or contact me on any of the social media from below and I will get back to you as soon as possible."
+        
+      },
+      "dad":{
+        "heading":"Dad's Website",
+        "lead":"My Dad is a Software Developer at PAS at Houston, check out his website"
+        
+      },
+      "resume":{
+        "heading":"Résumé",
+        "lead":"Seeking challenging assignment in Software Development"
+        
+      },
+      "sessions":["me", "projects","contacts","dad","resume"]
+      
+}

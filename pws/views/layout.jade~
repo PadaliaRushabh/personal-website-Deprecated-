@@ -12,10 +12,4 @@ html(lang='en')
     link(href='css/main.css', rel='stylesheet')
     link(href='css/responsive.css', rel='stylesheet')
   body
-    block append content
-        
-    script(src='js/jquery.js')
-    script(src='js/bootstrap.min.js')
-    script(src='js/main.js')
-    script#github-bjs(async='', defer='', src='https://buttons.github.io/buttons.js')
-
+    block content
