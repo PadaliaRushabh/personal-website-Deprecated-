@@ -1,5 +1,5 @@
 extends layout
-
+-var json = !{JSON.stringify(datajson)};
 block content
     section#nav
       nav.navbar.navbar-default.navbar-fixed-top
@@ -30,113 +30,67 @@ block content
           .row
             .col-xs-12.intro-wrap
               .intro
-                img.img-responsive.my-image(src='images/me/4.jpg', alt='Rushabh Padalia')
+                img.img-responsive.my-image(src='images/me/#{json.me.image}', alt='Rushabh Padalia')
                 .my-info
                   h4
-                    | I am Rushabh Padalia, a student and a freelance programmer.
-                    | Programming is my passion, I love working with different programming languages - Java, Python, JavaScript, PHP, C#.
-                    | I am also open-source enthusiast and won't mind playing with Linux whole day.
+                    | #{json.me.my_intro}
                   .creativezombies
                     h4
-                      | I am also co-founder of Software Development company 
-                      a(href='http://www.creativezombies.com/', target='_blank')  CreativeZombies 
+                      | #{json.me.creativezombies.desc}
+                      a(href='#{json.me.creativezombies.web}', target='_blank')  #{json.me.creativezombies.name} 
     section#projects
       .container
         .center
-          h2 Projects
-          p.lead Some of the recent Projects I have worked on
+          h2 #{json.projects.heading}
+          p.lead #{json.projects.lead}
           a.github-button(href='https://github.com/padaliarushabh', data-style='mega') Follow @padaliarushabh
         .row
           .project-gallery
-            .col-sm-6.col-md-6.col-lg-4
-              .box
-                .pull-left
-                  img.img-responsive.img-projects-type(src='images/projects/type/android.png', alt='')
-                .projects-body
-                  h3.projects-heading Control Over Web
-                  // <p class="projects-desc">See temperature and get notification on your android device when the fire alarm or intrusion detection sensors gets activated.  </p>
-                img.img-responsive.img-projects(src='images/projects/1.jpg', alt='')
-                p.projects-desc
-                  | See temperature and get notification on your android device when the fire alarm or intrusion detection sensors gets activated.
-                .projects-view
-                  a.fa-git(href='https://github.com/PadaliaRushabh/control-over-web', target='_blank')
-            .col-sm-6.col-md-6.col-lg-4
-              .box
-                .pull-left
-                  img.img-responsive.img-projects-type(src='images/projects/type/web_development.png', alt='')
-                .projects-body
-                  h3.projects-heading Ancee Website
-                  // <p class="projects-desc">Ancee Website for fashion store, which includes an administrative backhand, where the site admin can update website information.</p>
-                img.img-responsive.img-projects(src='images/projects/2.jpg', alt='')
-                p.projects-desc
-                  | Ancee Website for fashion store, which includes an administrative backhand, to make updates website easy.
-                .projects-view
-                  a.fa-eye(href='http://www.an-cee.com/', target='_blank')
-            .col-sm-6.col-md-6.col-lg-4
-              .box
-                .pull-left
-                  img.img-responsive.img-projects-type(src='images/projects/type/web_development.png', alt='')
-                .projects-body
-                  h3.projects-heading The Royal Taj
-                  // <p class="projects-desc">A website for Royal Taj (Restaurant), The website includes ajax drive menu which fetches data from a json file, to update menu easily.</p>
-                img.img-responsive.img-projects(src='images/projects/3.png', alt='')
-                p.projects-desc
-                  | A website for Royal Taj (Restaurant), The website includes ajax drive menu which fetches data from a json file.
-                .projects-view
-                  a.fa-eye(href='http://www.theroyaltaj.com/index.php', target='_blank')
-            .col-sm-6.col-md-6.col-lg-4
-              .box
-                .pull-left
-                  img.img-responsive.img-projects-type(src='images/projects/type/android.png', alt='')
-                .projects-body
-                  h3.projects-heading Guess My Number
-                  // <p class="projects-desc">Android game application will allow children to play an educational game using virtual cards that display collections of numbers.</p>
-                img.img-responsive.img-projects(src='images/projects/4.jpg', alt='')
-                p.projects-desc
-                  | Android game application will allow children to play an educational game using virtual cards that display collections of numbers.
-                .projects-view
-                  a.fa-git(href='https://github.com/PadaliaRushabh/Guess-My-Number', target='_blank')
-            .col-sm-6.col-md-6.col-lg-4
-              .box
-                .pull-left
-                  img.img-responsive.img-projects-type(src='images/projects/type/terminal.png', alt='')
-                .projects-body
-                  h3.projects-heading TweetX
-                  // <p class="projects-desc"> A data mining project to collect information from twitter and cluster them using K-mean algorithm. Ruby script is used to collect data from twitter. </p>
-                img.img-responsive.img-projects(src='images/projects/5.png', alt='')
-                p.projects-desc
-                  | A data mining project to collect information from twitter and cluster them using K-mean algorithm.
-                .projects-view
-                  a.fa-git(href='https://github.com/PadaliaRushabh/tweetx', target='_blank')
-            .col-sm-6.col-md-6.col-lg-4
-              .box
-                .pull-left
-                  img.img-responsive.img-projects-type(src='images/projects/type/windows.png', alt='')
-                .projects-body
-                  h3.projects-heading Safety Field Audit
-                  // <p class="projects-desc">Web based application for Engineers to input and manage safety violations by staff during work in yards. Reports generated using SSRS. </p>
-                img.img-responsive.img-projects(src='images/projects/6.jpg', alt='')
-                p.projects-desc
-                  | Web based application for Engineers to input and manage safety violations by staff during work in yards. Reports generated using SSRS.
-                .empty-view-project
+            each project in json.projects.projects
+              .col-sm-6.col-md-6.col-lg-4
+                .box
+                  .pull-left
+                    img.img-responsive.img-projects-type(src='images/projects/type/#{project.type_img}', alt='')
+                  .projects-body
+                    h3.projects-heading #{project.heading}
+                  img.img-responsive.img-projects(src='images/projects/#{project.project_img}', alt='')
+                  p.projects-desc
+                    |  #{project.desc}
+                  
+                    -var hasViews = project.views.length
+                    if hasViews !=0
+                      .projects-view
+                        each view in project.views
+                          each val, index in view
+                            a(href='#{val}', class='#{index}', target='_blank')
+                    else   
+                      .empty-view-project
+
     section#contact
       .overlay
         .container
           .row
             .center
-              h2 Contact
+              h2 #{json.contacts.heading}
               p.lead
-                | Want to say hello? Talk to me? Send me a message or contact me on any of the social media from below and I will get back to you as soon as possible.
-              a.contact(href='https://www.facebook.com/padalia.rushabh', target='_blank', data-toggle='tooltip', title='padalia.rushabh', data-placement='left')
-                i.fa.fa-facebook  
-              a.contact(href='https://plus.google.com/+RushabhPadalia/posts', target='_blank', data-toggle='tooltip', title='+RushabhPadalia', data-placement='bottom')
-                i.fa.fa-google-plus  
-              a.contact(href='https://twitter.com/padaliarushabh', target='_blank', data-toggle='tooltip', title='@padaliarushabh', data-placement='bottom')
-                i.fa.fa-twitter  
-              a.contact(href='https://github.com/PadaliaRushabh', target='_blank', data-toggle='tooltip', title='@padaliarushabh', data-placement='bottom')
-                i.fa.fa-git
-              a.contact(href='mailto:padalia.rushabh@gmail.com?Subject=Hello', target='_top', data-toggle='tooltip', title='padalia.rushabh@gmail.com', data-placement='right')
-                i.fa.fa-google  
+                | #{json.contacts.lead}
+                
+              -var counter = 0
+              each view in json.contacts.views
+                -var internal_counter = 0
+                -var key = Object.keys(view)
+                  if counter == 0
+                    a.contact(href='#{view[key[0]]}', target='_blank', data-toggle='tooltip', title='#{view.social_name}', data-placement='left')
+                      i(class="fa #{key[0]}")
+                  else if counter == json.contacts.views.length - 1
+                    a.contact(href='#{view[key[0]]}', target='_blank', data-toggle='tooltip', title='#{view.social_name}', data-placement='right')
+                      i(class="fa #{key[0]}")      
+                  else
+                    a.contact(href='#{view[key[0]]}', data-toggle='tooltip', title='#{view.social_name}', data-placement='bottom')
+                      i(class="fa #{key[0]}")
+                  -counter = counter + 1
+                  
+
             .col-xs-12
               .contact-box
                 form.form-horizontal(role='form')
@@ -155,16 +109,16 @@ block content
     section#dad
       .container
         .center
-          h2 Dad's Website
-          p.lead My Dad is a Software Developer at PAS at Houston, check out his website
+          h2 #{json.dad.heading}
+          p.lead #{json.contacts.lead}
           button#dad-website-btn.btn.btn-lg.btn-warning Dad's Website
     section#resume
       .overlay
         .container
           .center
-            h2 Résumé
-            p.lead Seeking challenging assignment in Software Development
-            img.img-responsive(src='images/resume/2.jpg', alt='Rushabh Padalia')
+            h2 #{json.resume.heading}
+            p.lead #{json.resume.lead}
+            img.img-responsive(src='images/resume/#{json.resume.img}', alt='Rushabh Padalia')
           .row
             .col-xs-12.center
               button.flat PDF Format

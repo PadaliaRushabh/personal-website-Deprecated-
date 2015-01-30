@@ -1,0 +1,100 @@
+{
+  "me": {
+    "my_intro": "I am Rushabh Padalia, a student and a freelance programmer. Programming is my passion, I love working with different programming languages - Java, Python, JavaScript, PHP, C#.I am also open-source enthusiast and won't mind playing with Linux whole day.",
+    "creativezombies": {
+        "desc":"I am also co-founder of Software Development company",
+        "web":"http://www.creativezombies.com/",
+        "name":"CreativeZombies"
+      },
+      "image":"4.jpg"
+  },
+    "projects": 
+      {
+        "heading": "Projects",
+        "lead": "Some of the recent Projects I have worked on",
+        "projects":[
+          {
+            "heading":"Control Over Web",
+            "desc":"See temperature and get notification on your android device when the fire alarm or intrusion detection sensors gets activated.",
+            "type_img":"android.png",
+            "project_img":"1.jpg",
+            "views":[
+              {"fa-git":"https://github.com/PadaliaRushabh/control-over-web"}
+              ]
+          },
+          
+          {
+            "heading":"Ancee Website",
+            "desc":"Ancee Website for fashion store, which includes an administrative backhand, to make updates website easy.",
+            "type_img":"web_development.png",
+            "project_img":"2.jpg",
+            "views":[
+              {"fa-eye":"http://www.an-cee.com"}
+              ]
+          
+          },
+          {
+            "heading":"The Royal Taj",
+            "desc":"A website for Royal Taj (Restaurant), The website includes ajax drive menu which fetches data from a json file.",
+            "type_img":"web_development.png",
+            "project_img":"3.png",
+            "views":[
+              {"fa-eye":"http://www.theroyaltaj.com/index.php"}
+              ]
+          
+          },
+          
+          {
+            "heading":"Guess My Number",
+            "desc":"Android game application will allow children to play an educational game using virtual cards that display collections of numbers.",
+            "type_img":"android.png",
+            "project_img":"4.jpg",
+            "views":[
+              {"fa-git":"https://github.com/PadaliaRushabh/Guess-My-Number"}
+              ]
+          },
+          {
+            "heading":"TweetX",
+            "desc":"A data mining project to collect information from twitter and cluster them using K-mean algorithm.",
+            "type_img":"terminal.png",
+            "project_img":"5.png",
+            "views":[
+              {"fa-git":"https://github.com/PadaliaRushabh/tweetx"}
+              ]
+          },
+          
+          {
+            "heading":"Safety Field Audit",
+            "desc":"Web based application for Engineers to input and manage safety violations by staff during work in yards. Reports generated using SSRS.",
+            "type_img":"windows.png",
+            "project_img":"6.jpg",
+            "views":[
+              
+              ]
+          }
+        ]
+      },
+      "contacts":{
+        "heading":"contact",
+        "lead":"Want to say hello? Talk to me? Send me a message or contact me on any of the social media from below and I will get back to you as soon as possible.",
+        "views":[
+              {"fa-facebook":"https://www.facebook.com/padalia.rushabh" , "social_name":"padalia.rushabh"},
+              {"fa-google-plus":"https://plus.google.com/+RushabhPadalia/posts", "social_name":"+RushabhPadalia"},
+              {"fa-twitter":"https://twitter.com/padaliarushabh", "social_name":"@PadaliaRushabh"},
+              {"fa-git":"https://github.com/PadaliaRushabh", "social_name":"PadaliaRushabh"},
+              {"fa-google":"mailto:padalia.rushabh@gmail.com?Subject=Hello", "social_name":"padalia.rushabh@gmail.com"}
+        ]
+        
+      },
+      "dad":{
+        "heading":"Dad's Website",
+        "lead":"My Dad is a Software Developer at PAS at Houston, check out his website"  
+        
+      },
+      "resume":{
+        "heading":"Résumé",
+        "lead":"Seeking challenging assignment in Software Development",
+        "img":"2.jpg"
+        
+      } 
+}
