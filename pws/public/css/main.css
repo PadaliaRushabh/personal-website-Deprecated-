@@ -304,6 +304,7 @@ nav{
 	font-size: 16px;
 	border: 1px solid #FFF;
 	font-family: zombiecat;
+    background-color:#EDE9E9;
 }
 
 #contact .btn{
@@ -313,8 +314,8 @@ nav{
 	font-family: zombiecat;
 
 }
-#contact .form-control{
-	background-color:#EDE9E9;
+#contact .error{
+	background-color:#BB5151;
 }
 #contact textarea{
 	min-height: 150px;

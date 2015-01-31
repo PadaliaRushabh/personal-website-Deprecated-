@@ -94,4 +94,86 @@ $(document).ready(function() {
    	return false;
 	});
 	
+	$('#send_message').click(function(e){
+		e.preventDefault(); 
+
+		var name = $('#name').val();
+		var email = $('#email').val();
+		var message = $('#message').val();
+		
+		var isError = false;
+		if($.trim(name).length == 0) {
+			$('#name').addClass("error");
+			isError = true;
+		} else{
+			if($('#name').hasClass('error')) 
+				$('#name').removeClass('error');				
+		}
+		
+		if( $.trim(email).length == 0){
+			$('#email').addClass("error");
+			isError = true;
+		} else{
+			if($('#email').hasClass('error')) 
+				$('#email').removeClass('error');	
+		}
+		
+		if($.trim(message).length == 0){
+			$('#message').addClass("error");
+			isError = true;
+		} else{
+				if($('#message').hasClass('error')) 
+					$('#message').removeClass('error');		
+		}
+		
+		if(isError == false){
+			$.post( "http://localhost:3000/mail", {name:name, email:email, message:message},function( result ) {
+				$('#name').val("");
+				$('#email').val("");
+				$('#message').val("");
+				
+				if($('#name').hasClass('error')) 
+					$('#name').removeClass('error');
+				if($('#email').hasClass('error')) 
+					$('#email').removeClass('error');
+				if($('#message').hasClass('error')) 
+					$('#message').removeClass('error');
+  				$( ".result" ).html( result );
+			});
+		} else{
+			
+			var html = "<div class='alert alert-danger' role='alert'> \
+    								<button type='button' class='close' data-dismiss='alert', aria-label='Close'> \
+      								<span aria-hidden='true'> \
+        									&times; \
+        								</span> \
+        							</button> \
+    							<strong> All fields are required </strong> \
+    							</div>";
+			$( ".result" ).html( html );		
+		}
+	});
+	
+	/*$("#message_form").validate({
+		focusCleanup: true,
+     	//by default the error elements is a <label>
+     	errorElement: "div",
+      //place all errors in a <div id="errors"> element
+      errorPlacement: function(error, element) {
+      	error.insertAfter(element);
+      },
+		submitHandler: function(form) {
+			var name = $('#name').val();
+			var email = $('#email').val();
+			var message = $('#message').val();
+		
+			$.post( "http://localhost:3000/mail", {name:name, email:email, message:message},function( result ) {
+  				$( ".result" ).html( result );
+  				//$("#message_form").resetForm();
+			});
+			return false;	
+  		}
+  		
+	});*/
+	
 });

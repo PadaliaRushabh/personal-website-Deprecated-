@@ -93,24 +93,27 @@ block content
 
             .col-xs-12
               .contact-box
-                form.form-horizontal(role='form')
+                form.form-horizontal(role='form', id="message_form")
+                  #group-name.form-group
+                    .col-sm-12
+                      input.form-control.form-footer(type='text', placeholder='Name', id='name')
+                  #group-email.form-group
+                    .col-sm-12
+                      input.form-control.form-footer(type='email', placeholder='Email', id='email')
+                  #group-message.form-group
+                    .col-sm-12
+                      textarea.form-control.form-footer(rows='3', placeholder='Message', id='message')
                   .form-group
                     .col-sm-12
-                      input#inputName.form-control.form-footer(type='text', placeholder='Name')
-                  .form-group
-                    .col-sm-12
-                      input#inputEmail.form-control.form-footer(type='email', placeholder='Email')
-                  .form-group
-                    .col-sm-12
-                      textarea.form-control.form-footer(rows='3', placeholder='Message')
-                  .form-group
-                    .col-sm-12
-                      button.btn.btn-lg.btn-message(type='submit') Send Message
+                      button.btn.btn-lg.btn-message(id='send_message') Send Message
+              div(class="result")
+                   
+              
     section#dad
       .container
         .center
           h2 #{json.dad.heading}
-          p.lead #{json.contacts.lead}
+          p.lead #{json.dad.lead}
           button#dad-website-btn.btn.btn-lg.btn-warning Dad's Website
     section#resume
       .overlay

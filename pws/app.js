@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var mail = require('./routes/mail');
 var users = require('./routes/users');
 
 var app = express();
@@ -23,6 +24,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/mail', mail);
+//app.use('/mail', function (req , res , next) {console.log("test");})
 
 app.locals.json = require(__dirname + "/config/data/data.json");
 
