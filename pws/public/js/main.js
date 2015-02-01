@@ -16,7 +16,7 @@ $(document).ready(function() {
 		}
   	});*/
   	
-  	$('#resume-html-display').load("resume.html");
+  	//$('#resume-html-display').load("resume.html");
 	
 	var sections = $('section')
   		, nav = $('nav')
@@ -90,7 +90,7 @@ $(document).ready(function() {
    	return false;
 	});
 	$('#resume-html-btn').click(function(){
-   	window.open('http://rushabh.padalia.net/resume');
+   	window.open('http://localhost:3000/resume');
    	return false;
 	});
 	
@@ -131,19 +131,13 @@ $(document).ready(function() {
 				$('#name').val("");
 				$('#email').val("");
 				$('#message').val("");
-				
-				if($('#name').hasClass('error')) 
-					$('#name').removeClass('error');
-				if($('#email').hasClass('error')) 
-					$('#email').removeClass('error');
-				if($('#message').hasClass('error')) 
-					$('#message').removeClass('error');
+				removeErrorDisplayColor();
   				$( ".result" ).html( result );
 			});
 		} else{
 			
 			var html = "<div class='alert alert-danger' role='alert'> \
-    								<button type='button' class='close' data-dismiss='alert', aria-label='Close'> \
+    								<button type='button' class='close' data-dismiss='alert' aria-label='Close'> \
       								<span aria-hidden='true'> \
         									&times; \
         								</span> \
@@ -153,6 +147,16 @@ $(document).ready(function() {
 			$( ".result" ).html( html );		
 		}
 	});
+	
+	function removeErrorDisplayColor(){
+				
+		if($('#name').hasClass('error')) 
+			$('#name').removeClass('error');
+		if($('#email').hasClass('error')) 
+			$('#email').removeClass('error');
+		if($('#message').hasClass('error')) 
+			$('#message').removeClass('error');
+	}
 	
 	/*$("#message_form").validate({
 		focusCleanup: true,
