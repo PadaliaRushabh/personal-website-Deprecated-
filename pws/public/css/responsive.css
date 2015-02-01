@@ -32,7 +32,7 @@
 	}
 }
 /* xs */
-@media (max-width: 767px) {
+@media (max-width: 767px)  {
 	
 	.box{
 		width: 70%;	
@@ -165,5 +165,72 @@
 	#resume{
 		background-attachment: scroll;
 	}
+    
+    
+} 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape){
+	
+	nav{
+		opacity: 1;
+	}
+    
+	#me .my-image{
+    	width:200px;
+    	height:200px;
+	}
+	#me{
+		min-height: 0;	
+		padding-top: 50px;
+		background-attachment: scroll;
+	}
+	#me .intro{
+    	position: static; /*For Top to work*/
+    	top: initial;/*Leave 50% from top*/
+    	-webkit-transform: none;/*Same as above just HTML5 Syntax*/
+    	-ms-transform: none;
+    	transform: none;
+    	margin-top: 30px;
+	}
+	#me .my-image{
+    	width:200px;
+    	height:200px;
+	}
+	.intro-wrap{
+		height: auto;
+	}
+	.overlay{
+		min-height: 0;	
+	}
+	#resume img{
+	 	width:250px;
+    	height:300px;
+	}	
+	
+	#resume button {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	#resume button:nth-child(2){
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	#resume button:nth-child(3){
+		padding-right: 27px;
+		padding-left: 27px;
+	}
+	#me .my-info h4{
+	 font-size: 16px;
+	}
+	#contact{
+		background-attachment: scroll;
+	}
+	#resume{
+		background-attachment: scroll;
+	}
+    
+
 }
 
