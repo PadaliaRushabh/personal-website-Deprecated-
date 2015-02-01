@@ -94,6 +94,16 @@ $(document).ready(function() {
    	return false;
 	});
 	
+	$('#resume-pdf-btn').click(function(){
+   	window.open('http://localhost:3000/resume/pdf');
+   	return false;
+	});
+	
+	$('#resume-doc-btn').click(function(){
+   	window.open('http://localhost:3000/resume/doc');
+   	return false;
+	});
+	
 	$('#send_message').click(function(e){
 		e.preventDefault(); 
 
