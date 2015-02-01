@@ -1,29 +1,6 @@
 extends layout
 -var json = !{JSON.stringify(datajson)};
 block content
-    section#nav
-      nav.navbar.navbar-default.navbar-fixed-top
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-          #bs-example-navbar-collapse-1.collapse.navbar-collapse
-            ul.nav.navbar-nav
-              li.active
-                a#nav-me(href='#me')
-                  | Me 
-                  span.sr-only (current)
-              li
-                a#nav-projects(href='#projects')  Projects 
-              li.visible-lg.visible-md.visible-sm
-                a#nav-rushabh(href='#')  Rushabh Padalia 
-              li
-                a#nav-contact(href='#contact')  Contact 
-              li
-                a#nav-resume(href='#resume')  Résumé 
     section#me
       .overlay
         .container
