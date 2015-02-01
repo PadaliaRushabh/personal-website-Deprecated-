@@ -62,7 +62,8 @@ block content
                       .projects-view
                         each view in project.views
                           each val, index in view
-                            a(href='#{val}', class='#{index}', target='_blank')
+                            a(href='#{val}', target='_blank')
+                              i(class='fa #{index}')
                     else   
                       .empty-view-project
 
