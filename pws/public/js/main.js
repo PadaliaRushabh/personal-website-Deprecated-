@@ -90,17 +90,17 @@ $(document).ready(function() {
    	return false;
 	});
 	$('#resume-html-btn').click(function(){
-   	window.open('http://localhost:3000/resume');
+   	window.open('/resume');
    	return false;
 	});
 	
 	$('#resume-pdf-btn').click(function(){
-   	window.open('http://localhost:3000/resume/pdf');
+   	window.open('/resume/pdf');
    	return false;
 	});
 	
 	$('#resume-doc-btn').click(function(){
-   	window.open('http://localhost:3000/resume/doc');
+   	window.open('/resume/doc');
    	return false;
 	});
 	
@@ -137,7 +137,7 @@ $(document).ready(function() {
 		}
 		
 		if(isError == false){
-			$.post( "http://localhost:3000/mail", {name:name, email:email, message:message},function( result ) {
+			$.post( "/mail", {name:name, email:email, message:message},function( result ) {
 				$('#name').val("");
 				$('#email').val("");
 				$('#message').val("");
