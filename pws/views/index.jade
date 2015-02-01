@@ -64,7 +64,7 @@ block content
                     a.contact(href='#{view[key[0]]}', target='_blank', data-toggle='tooltip', title='#{view.social_name}', data-placement='right')
                       i(class="fa #{key[0]}")      
                   else
-                    a.contact(href='#{view[key[0]]}', data-toggle='tooltip', title='#{view.social_name}', data-placement='bottom')
+                    a.contact(href='#{view[key[0]]}', target='_blank' , data-toggle='tooltip', title='#{view.social_name}', data-placement='bottom')
                       i(class="fa #{key[0]}")
                   -counter = counter + 1
                   
@@ -102,6 +102,6 @@ block content
             img.img-responsive(src='images/resume/#{json.resume.img}', alt='Rushabh Padalia')
           .row
             .col-xs-12.center
-              button.flat PDF Format
+              button#resume-pdf-btn.flat PDF Format
               button#resume-html-btn.flat HTML Format
-              button.flat Doc Format
+              button#resume-doc-btn.flat Doc Format
