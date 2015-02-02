@@ -36,7 +36,7 @@ function setUpEmail(req,res,callback){
     from: 'Rushabh Padalia <padalia.rushabh@gmail.com>', // sender address
     to: 'padalia.rushabh@gmail.com', // list of receivers
     subject: 'Website:Message from ' + name, // Subject line
-    text: message+"\n\nname:"+name+"\nemail:"+email // plaintext body
+    text: message+"\n\nName: "+name+"\nEmail: "+email // plaintext body
 
 	};
 	
