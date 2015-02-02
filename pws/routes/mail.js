@@ -27,7 +27,7 @@ function setUpEmail(req,res,callback){
     service: 'Gmail',
     	auth: {
         user: 'padalia.rushabh@gmail.com',
-        pass: 'Creatives@321.com'
+        pass: '<My password here>'
     	}
 	});
 	
