@@ -2,41 +2,10 @@ $(document).ready(function() {
   	$('.contact').tooltip();
   
   	/*Resume*/
-  
-  	/*var isdisplayed = false; 
-  	$('#resume-html-btn').click(function(){
-
-  		if(isdisplayed == false){
-  				console.log("clicked");
-				$('#resume-html-display').load("resume.html");
-  				isdisplayed = true;
-		} else{
-			$('#resume-html-display').html("");
-			isdisplayed = false;		
-		}
-  	});*/
-  	
-  	//$('#resume-html-display').load("resume.html");
 	
 	var sections = $('section')
   		, nav = $('nav')
   		, nav_height = nav.outerHeight();
-  
-	/*$(".navbar-nav>li>a").click(function (e) {	
-		var menu = $(this).parent().parent();
-		menu.find("li").each(function(index) {
-		if(index !=2 ){			
-  			if($(this).hasClass("active") == true){
-  				console.log($(this).parent().html())
-				$(this).removeClass("active");  			
-  			}
-  		}	
-		});
-		//console.log($(this).html().trim() === "Rushabh Padalia");
-		if($(this).html().trim() !== "Rushabh Padalia"){
-			$(this).parent().addClass("active");
-		}
-	});*/
 
 	$("#nav-projects").click(function(e) {
 		e.preventDefault(); 
@@ -167,27 +136,5 @@ $(document).ready(function() {
 		if($('#message').hasClass('error')) 
 			$('#message').removeClass('error');
 	}
-	
-	/*$("#message_form").validate({
-		focusCleanup: true,
-     	//by default the error elements is a <label>
-     	errorElement: "div",
-      //place all errors in a <div id="errors"> element
-      errorPlacement: function(error, element) {
-      	error.insertAfter(element);
-      },
-		submitHandler: function(form) {
-			var name = $('#name').val();
-			var email = $('#email').val();
-			var message = $('#message').val();
-		
-			$.post( "http://localhost:3000/mail", {name:name, email:email, message:message},function( result ) {
-  				$( ".result" ).html( result );
-  				//$("#message_form").resetForm();
-			});
-			return false;	
-  		}
-  		
-	});*/
 	
 });
