@@ -81,8 +81,9 @@
               {"fa-facebook":"https://www.facebook.com/padalia.rushabh" , "social_name":"padalia.rushabh"},
               {"fa-google-plus":"https://plus.google.com/+RushabhPadalia/posts", "social_name":"+RushabhPadalia"},
               {"fa-twitter":"https://twitter.com/padaliarushabh", "social_name":"@PadaliaRushabh"},
+              {"fa-linkedin":"https://www.linkedin.com/in/padaliarushabh", "social_name":"padaliarushabh"},
               {"fa-git":"https://github.com/PadaliaRushabh", "social_name":"PadaliaRushabh"},
-              {"fa-google":"mailto:padalia.rushabh@gmail.com?Subject=Hello", "social_name":"padalia.rushabh@gmail.com"}
+              {"fa-envelope":"mailto:padalia.rushabh@gmail.com?Subject=Hello", "social_name":"padalia.rushabh@gmail.com"}
         ]
         
       },

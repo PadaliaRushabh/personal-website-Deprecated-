@@ -39,9 +39,13 @@ body{
 .fa-twitter{
 	color:rgb(0, 164, 249);
 }
-.fa-google{
+.fa-envelope{
 	color:rgb(255, 255, 255);
 }
+.fa-linkedin{
+    color:#0B7BB6;
+}
+
 
 a:hover{
 	text-decoration: none;
