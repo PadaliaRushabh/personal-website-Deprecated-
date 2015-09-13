@@ -1,12 +1,12 @@
 {
   "me": {
-    "my_intro": "I am Rushabh Padalia, a student and a freelance programmer. Programming is my passion, I love working with different programming languages - Java, Python, JavaScript, PHP, C#.I am also open-source enthusiast and won't mind playing with Linux whole day.",
+    "my_intro": "I am Rushabh Padalia, a student and a freelance programmer. Programming is my passion, I love working with different programming languages - Java, Python, JavaScript, PHP, C#. I am also open-source enthusiast and won't mind playing with Linux whole day.",
     "creativezombies": {
         "desc":"I am also co-founder of Software Development company",
         "web":"http://www.creativezombies.com/",
         "name":"CreativeZombies"
       },
-      "image":"4.jpg"
+      "image":"7.jpg"
   },
     "projects": 
       {
@@ -81,8 +81,9 @@
               {"fa-facebook":"https://www.facebook.com/padalia.rushabh" , "social_name":"padalia.rushabh"},
               {"fa-google-plus":"https://plus.google.com/+RushabhPadalia/posts", "social_name":"+RushabhPadalia"},
               {"fa-twitter":"https://twitter.com/padaliarushabh", "social_name":"@PadaliaRushabh"},
+              {"fa-linkedin":"https://www.linkedin.com/in/padaliarushabh", "social_name":"padaliarushabh"},
               {"fa-git":"https://github.com/PadaliaRushabh", "social_name":"PadaliaRushabh"},
-              {"fa-google":"mailto:padalia.rushabh@gmail.com?Subject=Hello", "social_name":"padalia.rushabh@gmail.com"}
+              {"fa-envelope":"mailto:padalia.rushabh@gmail.com?Subject=Hello", "social_name":"padalia.rushabh@gmail.com"}
         ]
         
       },

@@ -76,7 +76,7 @@ h2{
 
 #me{
     min-height:100vh;
-    background-image:url("../images/intro/4.jpg");
+    background-image:url("../images/intro/8.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,16 +93,16 @@ h2{
 #me .my-image{
     width:300px;
     height:300px;
-    margin:0 auto; 
+    margin:0 auto;
 	 border: 6px solid rgb(33, 27, 37);
 	 border-radius: 25px;
 }
 
 #me .my-info{
     max-width:800px;
-    margin:30px auto 0 auto; 
-    text-align:center;  
-   
+    margin:30px auto 0 auto;
+    text-align:center;
+
 }
 
 #me .my-info h4{
@@ -145,7 +145,7 @@ h2{
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 	color: #D07E7E;
-	background-color: transparent; 
+	background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -188,7 +188,7 @@ nav{
 /*Project*/
 #projects{
 	background-color: rgb(249, 249, 249);
-	
+
 }
 
 .projects-body{
@@ -197,11 +197,11 @@ nav{
 }
 
 .projects-body h3{
-	margin-left: 15px;	
+	margin-left: 15px;
 }
 
 .projects-body p{
-	margin-left: 15px;	
+	margin-left: 15px;
 	margin-bottom: 20px;
 }
 
@@ -231,7 +231,7 @@ nav{
 
 }
 
-.box img{	
+.box img{
 	margin-bottom: 15px;
 }
 
@@ -261,7 +261,7 @@ nav{
 
 .projects-view a{
 	text-decoration: none;
-	
+
 }
 
 /*contact*/
@@ -380,12 +380,12 @@ nav{
 #resume .overlay{
 	background-color: rgba(0, 23, 19, 0.53);
 	min-height: 800px;
-	
+
 }
 #resume img{
 	 width:350px;
     height:500px;
-    margin:0 auto; 
+    margin:0 auto;
 	 border: 3px solid rgb(138, 152, 202);
 	 border-radius: 25px;
 }
@@ -409,4 +409,3 @@ nav{
   background-color: #27496d;
   text-shadow: -1px 1px #193047;
 }
-
