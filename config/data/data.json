@@ -1,6 +1,7 @@
 {
   "me": {
-    "my_intro": "I am Rushabh Padalia, a student and a freelance programmer. Programming is my passion, I love working with different programming languages - Java, Python, JavaScript, PHP, C#. I am also open-source enthusiast and won't mind playing with Linux whole day.",
+    "my_intro": "Rushabh Padalia",
+    "tag_line": "Smart, Qualified, Ambitious, Team Player and a CreativeZombie",
     "creativezombies": {
         "desc":"I am also co-founder of Software Development company",
         "web":"http://www.creativezombies.com/",
@@ -8,7 +9,7 @@
       },
       "image":"6.jpg"
   },
-    "projects": 
+    "projects":
       {
         "heading": "Projects",
         "lead": "Some of the recent Projects I have worked on",
@@ -22,7 +23,7 @@
               {"fa-git":"https://github.com/PadaliaRushabh/control-over-web"}
               ]
           },
-          
+
           {
             "heading":"Ancee Website",
             "desc":"Ancee Website for fashion store, which includes an administrative backhand, to make updates website easy.",
@@ -31,7 +32,7 @@
             "views":[
               {"fa-eye":"http://www.an-cee.com"}
               ]
-          
+
           },
           {
             "heading":"The Royal Taj",
@@ -41,9 +42,9 @@
             "views":[
               {"fa-eye":"http://www.theroyaltaj.com/index.php"}
               ]
-          
+
           },
-          
+
           {
             "heading":"Guess My Number",
             "desc":"Android game application will allow children to play an educational game using virtual cards that display collections of numbers.",
@@ -62,14 +63,14 @@
               {"fa-git":"https://github.com/PadaliaRushabh/tweetx"}
               ]
           },
-          
+
           {
             "heading":"Safety Field Audit",
             "desc":"Web based application for Engineers to input and manage safety violations by staff during work in yards. Reports generated using SSRS.",
             "type_img":"windows.png",
             "project_img":"6.jpg",
             "views":[
-              
+
               ]
           }
         ]
@@ -85,17 +86,17 @@
               {"fa-git":"https://github.com/PadaliaRushabh", "social_name":"PadaliaRushabh"},
               {"fa-envelope":"mailto:padalia.rushabh@gmail.com?Subject=Hello", "social_name":"padalia.rushabh@gmail.com"}
         ]
-        
+
       },
       "dad":{
         "heading":"Dad's Website",
-        "lead":"My Dad is a Software Developer at PAS at Houston, check out his website"  
-        
+        "lead":"My Dad is a Software Developer at PAS at Houston, check out his website"
+
       },
       "resume":{
         "heading":"Résumé",
         "lead":"Seeking challenging assignment in Software Development",
         "img":"2.jpg"
-        
-      } 
+
+      }
 }
