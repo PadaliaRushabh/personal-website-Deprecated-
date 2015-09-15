@@ -1,3 +1,84 @@
+@media (min-width: 1380px) and (max-width: 1690px){
+	#me .my-info h4{
+		 font-family: axis;
+		 font-size: 65px;
+	   line-height: 24px;
+		 color: rgb(199, 199, 199);
+	}
+
+	.tagline h4{
+	  font-size: 16.6px !important;
+	}
+
+}
+
+@media (min-width: 1418px) and (max-width: 1599px){
+	#me .my-info h4{
+		 font-family: axis;
+		 font-size: 65px;
+	   line-height: 24px;
+		 color: rgb(199, 199, 199);
+	}
+
+	.tagline h4{
+	  font-size: 16.6px !important;
+	}
+
+	#me .intro{
+	    position: relative; /*For Top to work*/
+	    top: 39%;/*Leave 50% from top*/
+	    -webkit-transform: translateY(-39%);/*Same as above just HTML5 Syntax*/
+	    -ms-transform: translateY(-39%);
+	    transform: translateY(-39%);
+	    -webkit-transform: translateX(-35%);
+	    -ms-transform: translateX(-35%);
+	    transform: translateX(-35%);
+	}
+
+}
+
+@media (min-width: 1320px ) and (max-width: 1419px){
+	#me .my-info h4{
+		 font-family: axis;
+		 font-size: 55px;
+	   line-height: 24px;
+		 color: rgb(199, 199, 199);
+	}
+
+	.tagline h4{
+	  font-size: 14px !important;
+	}
+
+	#me .intro{
+	    position: relative; /*For Top to work*/
+	    top: 39%;/*Leave 50% from top*/
+	    -webkit-transform: translateY(-39%);/*Same as above just HTML5 Syntax*/
+	    -ms-transform: translateY(-39%);
+	    transform: translateY(-39%);
+	    -webkit-transform: translateX(-35%);
+	    -ms-transform: translateX(-35%);
+	    transform: translateX(-35%);
+	}
+
+}
+
+@media (min-width: 768px ) and (max-width: 1319px){
+
+
+	#me .intro{
+    	position: relative; /*For Top to work*/
+			top: 60%;/*Leave 50% from top*/
+			-webkit-transform: translateY(-60%);/*Same as above just HTML5 Syntax*/
+			-ms-transform: translateY(-60%);
+			transform: translateY(-60%);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+	}
+
+}
+
+
 /* lg */
 @media (min-width: 1200px) {
 
@@ -67,6 +148,9 @@
 			padding-bottom: 50px;
 			padding-top: 150px;
 	}
+	.tagline h4{
+		font-size: 14.3px !important;
+	}
 	#me .my-image{
     	width:200px;
     	height:200px;
@@ -95,13 +179,19 @@
 		padding-left: 27px;
 	}
 	#me .my-info h4{
-	 font-size: 16px;
+	 font-size: 55px;
 	}
 	#contact{
 		background-attachment: scroll;
 	}
 	#resume{
 		background-attachment: scroll;
+	}
+}
+
+@media (max-width: 556px)  {
+	#me .my-info h4{
+	 font-size: 49px;
 	}
 }
 
