@@ -16,8 +16,23 @@
 }
 
 @font-face {
+    font-family: adam;
+    src: url(../fonts/adam.otf);
+}
+
+@font-face {
     font-family: bikoregular;
     src: url(../fonts/Biko_Regular.otf);
+}
+
+@font-face {
+    font-family: mohave;
+    src: url(../fonts/Mohave.otf);
+}
+
+@font-face {
+    font-family: mohavebold;
+    src: url(../fonts/Mohave-Bold.otf);
 }
 
 body{
@@ -58,6 +73,7 @@ h2{
 	font-family: axis;
 	color: rgb(178, 87, 87);
 	margin-top: 30px;
+  font-size: 45px;
 }
 
 .center {
@@ -66,7 +82,7 @@ h2{
 }
 
 .lead {
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 24px;
 	font-weight: 400;
 	font-family: BikoRegular;
@@ -86,10 +102,10 @@ h2{
 }
 #me .intro{
     position: relative; /*For Top to work*/
-    top: 39%;/*Leave 50% from top*/
-    -webkit-transform: translateY(-39%);/*Same as above just HTML5 Syntax*/
-    -ms-transform: translateY(-39%);
-    transform: translateY(-39%);
+    top: 35%;/*Leave 50% from top*/
+    -webkit-transform: translateY(-35%);/*Same as above just HTML5 Syntax*/
+    -ms-transform: translateY(-35%);
+    transform: translateY(-35%);
     -webkit-transform: translateX(-43%);
     -ms-transform: translateX(-43%);
     transform: translateX(-43%);
@@ -119,10 +135,10 @@ h2{
 }*/
 
 #me .my-info h4{
-	 font-family: axis;
+	 font-family: adam;
 	 font-size: 75px;
    line-height: 24px;
-	 color: rgb(199, 199, 199);
+	 color: rgb(199, 199, 199) ;
 }
 
 .tagline{
@@ -130,6 +146,10 @@ h2{
 }
 .tagline h4{
   font-size: 19px !important;
+  color:#FFFFFF !important;
+}
+.tagline h4 a{
+  color: #FFD6D1 !important;
 }
 .intro-wrap{
 	height: 90.7vh;
@@ -140,7 +160,7 @@ h2{
 }*/
 
 .overlay{
-	background-color: rgba(0, 23, 19, 0.53);
+	background-color: rgba(5, 1, 56, 0.5);
 	min-height:100vh;
 }
 
@@ -224,9 +244,9 @@ nav{
 .projects-desc{
 	font-family: bikoregular;
 	color: rgb(145, 40, 40);
-	font-size: 15px;
+	font-size: 20px;
 	text-align: left;
-	height: 50px;
+	height: 70px;
 	margin-top: 20px;
 }
 .empty-view-project{

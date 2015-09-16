@@ -1,11 +1,11 @@
 {
   "me": {
     "my_intro": "Rushabh Padalia",
-    "tag_line": "Smart, Qualified, Ambitious, Team Player and a CreativeZombie",
+    "tag_line": "Smart, Qualified, Ambitious, Team Player and a",
     "creativezombies": {
         "desc":"I am also co-founder of Software Development company",
         "web":"http://www.creativezombies.com/",
-        "name":"CreativeZombies"
+        "name":"CreativeZombie"
       },
       "image":"6.jpg"
   },
