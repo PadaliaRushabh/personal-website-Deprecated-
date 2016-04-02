@@ -35,6 +35,7 @@ app.use('/', routes);
 app.use('/mail', mail);
 //app.use('/mail', function (req , res , next) {console.log("test");})
 
+/*
 var compressor = require('node-minify');
 new compressor.minify({
   type: 'gcc',
@@ -55,7 +56,7 @@ new compressor.minify({
     }
 });
 
-
+*/
 app.get('/resume', function(req, res){
  
   res.redirect('/resume/html');
