@@ -35,6 +35,27 @@ app.use('/', routes);
 app.use('/mail', mail);
 //app.use('/mail', function (req , res , next) {console.log("test");})
 
+var compressor = require('node-minify');
+new compressor.minify({
+  type: 'gcc',
+  fileIn: 'public/js/main.js',
+  fileOut: 'public/js-dist/main-min.js',
+  callback: function(err, min){
+    console.log(err);
+    //console.log(min);
+  }
+});
+
+new compressor.minify({
+  type: 'sqwish',
+  fileIn: ['public/css/main.css', 'public/css/responsive.css'],
+  fileOut: 'public/css-dist/main-dist.css',
+    callback: function(err, min){;
+        console.log(err)
+    }
+});
+
+
 app.get('/resume', function(req, res){
  
   res.redirect('/resume/html');
