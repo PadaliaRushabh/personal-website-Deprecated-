@@ -17,7 +17,7 @@
         "projects":[
           {
             "heading":"Canberra Trail Pass",
-            "desc":"Canberra Trail Pass is my final year mobile application project at ANU. Canberra Trail Pass tracks performance and progress on trail with city pass and discounts.",
+            "desc":"Canberra Trail Pass is my final year mobile application project at ANU. Canberra Trail Pass tracks performance and progress on trail with city pass and discounts",
             "type_img":"android.png",
             "project_img":"8.png",
             "views":[
@@ -36,7 +36,7 @@
           },        
           {
             "heading":"Remember To Call",
-            "desc":"Remember to call is a Androin application which will allow you to keep in touch with your friends and family! The app sends you a notification so you know that it's time to call!",
+            "desc":"Remember to call is a Android application which will allow you to keep in touch with your friends and family! The app sends you a notification so you know that it's time to call!",
             "type_img":"android.png",
             "project_img":"7.png",
             "views":[
@@ -46,7 +46,7 @@
           },
           {
             "heading":"Control Over Web",
-            "desc":"See temperature and get notification on your android device when the fire alarm or intrusion detection sensors gets activated.",
+            "desc":"See current temperature at home and get notification on your android device when the fire alarm or intrusion detection sensors gets activated",
             "type_img":"android.png",
             "project_img":"1.jpg",
             "views":[
@@ -55,7 +55,7 @@
           },
           {
             "heading":"The Royal Taj",
-            "desc":"A website for Royal Taj (Restaurant), The website includes ajax drive menu which fetches data from a json file.",
+            "desc":"A website for Royal Taj (Restaurant), The website includes ajax drive menu which fetches data from a json file",
             "type_img":"web_development.png",
             "project_img":"3.png",
             "views":[
@@ -94,7 +94,7 @@
       },
       "resume":{
         "heading":"Résumé",
-        "lead":"Seeking challenging assignment in Software Development",
+        "lead":"Actively looking for jobs with Graduate Software Development/Engineer positions",
         "img":"2.jpg"
 
       }
