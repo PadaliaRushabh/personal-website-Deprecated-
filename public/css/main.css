@@ -223,7 +223,7 @@ nav{
 
 .projects-body{
 	overflow: hidden;
-	height: 70px;
+	height: 90px;
 }
 
 .projects-body h3{
@@ -245,8 +245,8 @@ nav{
 	font-family: bikoregular;
 	color: rgb(145, 40, 40);
 	font-size: 20px;
-	text-align: left;
-	height: 70px;
+	text-align: justify;
+	height: 140px;
 	margin-top: 20px;
 }
 .empty-view-project{
@@ -258,7 +258,6 @@ nav{
 	background: #FFFFFF;
 	border-radius:5px;
 	margin: 0 0 40px;
-
 }
 
 .box img{
@@ -291,6 +290,7 @@ nav{
 
 .projects-view a{
 	text-decoration: none;
+	margin-right:10px;
 
 }
 

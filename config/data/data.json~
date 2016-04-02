@@ -1,18 +1,49 @@
 {
   "me": {
-    "my_intro": "I am Rushabh Padalia, a student and a freelance programmer. Programming is my passion, I love working with different programming languages - Java, Python, JavaScript, PHP, C#. I am also open-source enthusiast and won't mind playing with Linux whole day.",
+    "my_intro": "Rushabh Padalia",
+    "tag_line": "Smart, Qualified, Ambitious, Team Player and a",
     "creativezombies": {
         "desc":"I am also co-founder of Software Development company",
         "web":"http://www.creativezombies.com/",
-        "name":"CreativeZombies"
+        "name":"CreativeZombie"
       },
-      "image":"7.jpg"
+      "image":"6.jpg"
   },
-    "projects": 
+    "projects":
+    
       {
         "heading": "Projects",
         "lead": "Some of the recent Projects I have worked on",
         "projects":[
+          {
+            "heading":"Canberra Trail Pass",
+            "desc":"Canberra Trail Pass is my final year mobile application project at ANU. Canberra Trail Pass tracks performance and progress on trail with city pass and discounts.",
+            "type_img":"android.png",
+            "project_img":"8.jpg",
+            "views":[
+              {"fa-eye":"https://play.google.com/store/apps/details?id=com.comp8715.canberratrailpass"}
+              ]
+
+          },
+          {
+            "heading":"ScreenAll ERP System",
+            "desc":"A Web based ERP system for SCRIM Products. This system automates the internal business processes of the company. The system is in beta stage and is used by the company",
+            "type_img":"process.png",
+            "project_img":"9.png",
+            "views":[
+              {"fa-eye":"https://screenall.herokuapp.com/"}
+              ]
+          },        
+          {
+            "heading":"Remember To Call",
+            "desc":"Remember to call is a Androin application which will allow you to keep in touch with your friends and family! The app sends you a notification so you know that it's time to call!",
+            "type_img":"android.png",
+            "project_img":"7.jpg",
+            "views":[
+              {"fa-git":"https://github.com/PadaliaRushabh/remembertocall",
+               "fa-eye":"https://play.google.com/store/apps/details?id=com.rushabh.remembertocall"}
+              ]
+          },
           {
             "heading":"Control Over Web",
             "desc":"See temperature and get notification on your android device when the fire alarm or intrusion detection sensors gets activated.",
@@ -22,17 +53,6 @@
               {"fa-git":"https://github.com/PadaliaRushabh/control-over-web"}
               ]
           },
-          
-          {
-            "heading":"Ancee Website",
-            "desc":"Ancee Website for fashion store, which includes an administrative backhand, to make updates website easy.",
-            "type_img":"web_development.png",
-            "project_img":"2.jpg",
-            "views":[
-              {"fa-eye":"http://www.an-cee.com"}
-              ]
-          
-          },
           {
             "heading":"The Royal Taj",
             "desc":"A website for Royal Taj (Restaurant), The website includes ajax drive menu which fetches data from a json file.",
@@ -41,35 +61,15 @@
             "views":[
               {"fa-eye":"http://www.theroyaltaj.com/index.php"}
               ]
-          
+
           },
-          
-          {
-            "heading":"Guess My Number",
-            "desc":"Android game application will allow children to play an educational game using virtual cards that display collections of numbers.",
-            "type_img":"android.png",
-            "project_img":"4.jpg",
-            "views":[
-              {"fa-git":"https://github.com/PadaliaRushabh/Guess-My-Number"}
-              ]
-          },
-          {
-            "heading":"TweetX",
-            "desc":"A data mining project to collect information from twitter and cluster them using K-mean algorithm.",
-            "type_img":"terminal.png",
-            "project_img":"5.png",
-            "views":[
-              {"fa-git":"https://github.com/PadaliaRushabh/tweetx"}
-              ]
-          },
-          
           {
             "heading":"Safety Field Audit",
             "desc":"Web based application for Engineers to input and manage safety violations by staff during work in yards. Reports generated using SSRS.",
             "type_img":"windows.png",
             "project_img":"6.jpg",
             "views":[
-              
+
               ]
           }
         ]
@@ -85,17 +85,17 @@
               {"fa-git":"https://github.com/PadaliaRushabh", "social_name":"PadaliaRushabh"},
               {"fa-envelope":"mailto:padalia.rushabh@gmail.com?Subject=Hello", "social_name":"padalia.rushabh@gmail.com"}
         ]
-        
+
       },
       "dad":{
         "heading":"Dad's Website",
-        "lead":"My Dad is a Software Developer at PAS at Houston, check out his website"  
-        
+        "lead":"My Dad is a Software Developer at PAS at Houston, check out his website"
+
       },
       "resume":{
         "heading":"Résumé",
         "lead":"Seeking challenging assignment in Software Development",
         "img":"2.jpg"
-        
-      } 
+
+      }
 }
