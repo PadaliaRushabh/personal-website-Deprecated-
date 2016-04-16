@@ -37,6 +37,7 @@ app.use('/mail', mail);
 
 /*
 var compressor = require('node-minify');
+
 new compressor.minify({
   type: 'gcc',
   fileIn: 'public/js/main.js',
@@ -55,8 +56,8 @@ new compressor.minify({
         console.log(err)
     }
 });
-
 */
+
 app.get('/resume', function(req, res){
  
   res.redirect('/resume/html');
